@@ -74,7 +74,7 @@ def index():
                 reviews.append(mydict)
             logging.info("log my final result {}".format(reviews))
             # Storing the data into an database
-            uri = "mongodb+srv://Mouli:Mouli1998@cluster0.hztszw3.mongodb.net/?retryWrites=true&w=majority"
+            uri = "{Your mongo db uri}}"
             client = pymongo.MongoClient(uri)
             db = client['reviews_scrapper']
             reveiw_collection = db['reviews_scrap_data']
